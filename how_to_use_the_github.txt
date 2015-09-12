@@ -13,3 +13,7 @@ $ git push -u origin master
 $ git add [files...]
 $ git commit -m "comment"
 $ git push -u origin master
+...
+$ git status
+$ git commit -a -m "comment"
+$ git push -u origin master
