@@ -1,0 +1,15 @@
+How to use the GitHub from Local.
+
+$ mkdir [rep_name]
+$ cd [rep_name]
+...
+$ echo "# rep_name" >> README.md
+$ git init
+$ git add README.md
+$ git commit -m "comment"
+$ git remote add origin https://github.com/[user-name]/[rep_name].git
+$ git push -u origin master
+...
+$ git add [files...]
+$ git commit -m "comment"
+$ git push -u origin master
