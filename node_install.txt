@@ -1,0 +1,34 @@
+Node.js on mac
+
+1. nvm (Node Version Manager)
+$ git clone https://github.com/creationix/nvm.git ~/.nvm
+$ source ~/.nvm/nvm.sh
+
+2. Node.js
+$ nvm ls-remote
+で表示される最新のバージョンを確認。
+$ nvm install 0.12.7
+$ node -v
+$ nvm alias default v0.12.7
+
+3.プロフィール
+$emacs .profile
+source ~/.nvm/nvm.sh
+export NODE_PATH=`npm root -g`
+
+4.express
+$ npm install -g express
+$ npm install -g express-generator
+
+4'.ejs (Embedded JavaScript templates)
+$ npm install -g ejs
+
+4'.socket.io
+$ npm install -g socket.io
+
+5.test (http://localhost:3000)
+$ express -t ejs firstapp
+$ cd firstapp
+$ npm install -d
+$ cd ..
+$ firstapp/bin/www
