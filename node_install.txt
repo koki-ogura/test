@@ -27,7 +27,7 @@ $ npm install -g ejs
 $ npm install -g socket.io
 
 5.test (http://localhost:3000)
-$ express firstapp
+$ express -e firstapp
 $ cd firstapp
 $ npm install -d
 $ cd ..
