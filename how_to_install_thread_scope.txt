@@ -1,0 +1,19 @@
+How to install ThreadScope on Mac
+https://wiki.haskell.org/ThreadScope
+
+Install XQuarts
+http://xquartz.macosforge.org/landing/
+
+Install Gtk2Hs/Mac
+https://wiki.haskell.org/Gtk2Hs/Mac
+$ brew install glib cairo gtk gettext fontconfig
+$ gtk-demo
+$ cabal update
+$ cabal install gtk2hs-buildtools
+
+And install ThreadScope
+$ cabal install gtk
+$ cabal install threadscope --extra-include=/usr/include --extra-lib-dirs=/usr/lib --extra-include=/opt/local/include --extra-lib-dirs=/opt/local/lib
+
+Test it
+$ threadscope --test ch8
