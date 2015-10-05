@@ -29,6 +29,6 @@ $ npm install -g socket.io
 5.test (http://localhost:3000)
 $ express -e firstapp
 $ cd firstapp
-$ npm install -d
+$ npm install
 $ cd ..
-$ firstapp/bin/www
+$ firstapp/bin/www or npm start
