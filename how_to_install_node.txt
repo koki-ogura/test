@@ -1,34 +1,40 @@
-Node.js on mac
+Easy install Node.js on mac
 
-1. nvm (Node Version Manager)
-$ git clone https://github.com/creationix/nvm.git ~/.nvm
-$ source ~/.nvm/nvm.sh
+1. install nvm (Node Version Manager)
+    $ git clone https://github.com/creationix/nvm.git ~/.nvm
+    $ source ~/.nvm/nvm.sh
 
-2. Node.js
-$ nvm ls-remote
-で表示される最新のバージョンを確認。
-$ nvm install 4.1.2
-$ node -v
-$ nvm alias default v4.1.2
+2. install Node.js
+  check latest version
+    $ nvm ls-remote
+  select latest version
+    $ nvm install 4.1.2
+  check installed version
+    $ node -v
+  set default version
+    $ nvm alias default v4.1.2
 
-3.プロフィール
-$emacs .zshrc
-source ~/.nvm/nvm.sh
-export NODE_PATH=`npm root -g`
+3. Setting the profile (write these two lines to .profile or .zshrc or ...)
+    source ~/.nvm/nvm.sh
+    export NODE_PATH=`npm root -g`
 
-4.express
-$ npm install -g express
-$ npm install -g express-generator
+4a. install express
+    $ npm install -g express
+    $ npm install -g express-generator
 
-4'.ejs (Embedded JavaScript templates)
-$ npm install -g ejs
+4b. install ejs (Embedded JavaScript templates)
+    $ npm install -g ejs
 
-4'.socket.io
-$ npm install -g socket.io
+4c. install socket.io
+    $ npm install -g socket.io
 
-5.test (http://localhost:3000)
-$ express -e firstapp
-$ cd firstapp
-$ npm install
-$ cd ..
-$ firstapp/bin/www or npm start
+5. test your program (http://localhost:3000)
+  make simple web server
+    $ express -e firstapp
+    $ cd firstapp
+    $ npm install
+  and run it
+    $ npm start
+  confirmation in the browser (http://localhost:3000)
+  and
+  type control+c for finish server
