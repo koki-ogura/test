@@ -1,0 +1,23 @@
+dev版のpythonをダウンロードするためにmercurialが必要。
+$ brew install mercurial
+
+dev版をダウンロードするが、コンパイラにsslの場所を示す必要がある。
+$ CFLAGS="-I$(brew --prefix openssl)/include" \
+> LDFLAGS="-L$(brew --prefix openssl)/lib" \
+> pyenv install -v 3.5-dev
+
+上の２つでは無理！
+mac用のpython3.5をダウンロードしてインストールする。
+
+$ gcc -fpic -I/Library/Frameworks/Python.framework/Versions/3.5/include/python3.5m -o hello.o -c hello.c
+$ gcc -shared hello.o -L/Library/Frameworks/Python.framework/Versions/3.5/lib -lpython3.5 -o hello.so
+
+コンパイル時のインクルードパスは環境変数として次のように設定しておくと良い。
+#python module making
+export PYTHON_ROOT_PATH=/Library/Frameworks/Python.framework/Versions/3.5
+export CPATH=$PYTHON_ROOT_PATH/include/python3.5m
+export LIBRARY_PATH=$PYTHON_ROOT_PATH/lib
+
+この状態でビルドは：
+$ gcc -fpic -c hello.c -o Hello.o
+$ gcc -shared hello.o -lpython3.5 -o hello.so
