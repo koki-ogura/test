@@ -35,6 +35,6 @@ Easy install Node.js on mac
     $ npm install
   and run it
     $ npm start
-  confirmation in the browser (http://localhost:3000)
+  browse http://localhost:3000
   and
   type control+c for finish server
