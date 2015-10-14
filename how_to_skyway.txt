@@ -1,0 +1,5 @@
+SkyWay の iOS SDK 0.2.0 を使ってプロジェクトを作る場合：
+Build Settings ->
+    Linking -> Other Linker Flags = -ObjC
+    Bundle Options -> Enable Bitcode = No
+    Framework Search Paths = ../SkyWay-iOS-SDK-0.2.0
