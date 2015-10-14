@@ -1,0 +1,14 @@
+ログイン：
+heroku login
+
+作成：
+$ heroku create
+
+反映させる；
+$ git push heroku master
+
+設定：
+$ heroku ps:scale web=1
+
+appの名前を変更する：
+$ heroku rename newname
