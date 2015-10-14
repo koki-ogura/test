@@ -4,7 +4,10 @@ heroku login
 作成：
 $ heroku create
 
-反映させる；
+...
+
+コミットして反映させる；
+$ git commit -a -m "heroku"
 $ git push heroku master
 
 設定：
