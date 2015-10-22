@@ -1,0 +1,4 @@
+emacs の elpa で jedi をインストールする。
+同時に
+$ pip install epc jedi
+も必要となる。
