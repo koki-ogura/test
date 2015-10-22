@@ -10,6 +10,10 @@ $ pyenv install 3.5.0
 $ pyenv rehash
 $ pyenv global 3.5.0
 
+upgrade pyenv:
+$ cd ~/.pyenv
+$ git pull
+
 emacs の elpa で jedi をインストールする。
 同時に
 $ pip install epc jedi
