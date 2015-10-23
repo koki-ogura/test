@@ -28,6 +28,9 @@ Easy install Node.js on mac
 4c. install socket.io
     $ npm install -g socket.io
 
+4d. install mongodb
+    $ npm install -g mongodb
+
 5. test your program (http://localhost:3000)
   make simple web server
     $ express -e firstapp
