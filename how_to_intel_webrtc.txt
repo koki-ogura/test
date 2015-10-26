@@ -1,0 +1,2 @@
+PeerServer:
+  port: 8095/8096
